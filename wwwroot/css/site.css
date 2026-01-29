@@ -1,0 +1,296 @@
+:root {
+    --primary-color: #0d6efd;
+    --glass-bg: rgba(18, 18, 24, 0.98); /* Bardzo ciemne tło dla czytelności */
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --text-shadow: 0 2px 4px rgba(0,0,0,1);
+    --accent-glow: 0 0 15px rgba(13, 110, 253, 0.5);
+}
+
+/* =========================================
+   1. GLOBALNE I ANIMACJE
+   ========================================= */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    /* Animowane tło "Deep Space" */
+    background: linear-gradient(-45deg, #050505, #1a103c, #0d1b2a, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Globalny styl paska przewijania (dla Admina i list) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #121212; 
+}
+::-webkit-scrollbar-thumb {
+    background: #444; 
+    border-radius: 5px;
+    border: 2px solid #121212;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0d6efd; 
+}
+
+/* =========================================
+   2. UKŁAD (LAYOUT) - MENU I STOPKA
+   ========================================= */
+
+/* Szklany nagłówek */
+.navbar-glass {
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Przezroczysta stopka */
+.footer-transparent {
+    background: transparent !important;
+    border-top: none !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+    font-size: 0.8rem;
+}
+
+/* Stylizacja linków w menu */
+.navbar-brand {
+    text-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+/* =========================================
+   3. GŁÓWNY WIDOK SPACERU (VIEWPORT)
+   ========================================= */
+
+.tour-viewport {
+    position: relative;
+    width: 100%;
+    max-width: 1400px; /* Blokada szerokości na dużych ekranach */
+    height: 78vh;      /* Wysokość okna spaceru */
+    background: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    /* --- KLUCZOWE CENTROWANIE --- */
+    margin: 20px auto; 
+    
+    /* Efekty wizualne ramki */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.tour-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: transform 0.5s ease;
+}
+
+/* =========================================
+   4. INTERFEJS UŻYTKOWNIKA (PRZYCISKI I OKNA)
+   ========================================= */
+
+/* Okrągłe przyciski (Info, Asystent) */
+.ui-btn {
+    position: absolute;
+    bottom: 30px;
+    width: 65px; height: 65px;
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; z-index: 50;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.ui-btn:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.15) rotate(10deg);
+    border-color: #fff;
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+/* Pozycje przycisków */
+.btn-info-pos { left: 30px; }
+.btn-teleport-pos { right: 30px; }
+
+/* Okienka Pop-up (Szklane) */
+.glass-popup {
+    display: none; 
+    position: absolute;
+    background: var(--glass-bg); 
+    border: 1px solid var(--glass-border);
+    border-radius: 15px; 
+    padding: 25px;
+    z-index: 100; 
+    color: white;
+    box-shadow: 0 20px 60px rgba(0,0,0,1); 
+    animation: fadeUp 0.3s ease-out;
+}
+
+.glass-popup h3, .glass-popup h4 {
+    text-shadow: var(--text-shadow);
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.glass-popup p, .glass-popup .small {
+    color: #ddd !important;
+    text-shadow: 0 1px 2px black;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translate(-50%, 20px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* Specyfika okna Info */
+.popup-info {
+    bottom: 110px; left: 30px; width: 340px;
+    transform: none; /* Reset centrowania */
+    animation: slideUpInfo 0.3s ease-out;
+}
+@keyframes slideUpInfo {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Specyfika okna Asystenta */
+.popup-teleport {
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 90%; max-width: 500px;
+    display: none; flex-direction: column;
+    background: #151515; /* Pełne krycie */
+}
+
+/* Lista w Asystencie */
+.teleport-list {
+    margin-top: 10px;
+    overflow-y: auto;
+    max-height: 50vh;
+    padding-right: 5px;
+}
+
+.teleport-item {
+    display: block; padding: 12px 15px; margin-bottom: 8px;
+    background: #252525; border-radius: 8px; color: #eee;
+    text-decoration: none; transition: 0.2s;
+    border-left: 4px solid transparent;
+}
+.teleport-item:hover {
+    background: #333;
+    border-left-color: #0d6efd;
+    padding-left: 20px;
+    color: white;
+}
+
+.close-btn {
+    position: absolute; top: 15px; right: 15px;
+    background: transparent; border: none;
+    color: #fff; font-size: 1.2rem; cursor: pointer; opacity: 0.6;
+}
+.close-btn:hover { opacity: 1; }
+
+/* =========================================
+   5. NAWIGACJA (STRZAŁKI)
+   ========================================= */
+
+.nav-arrow {
+    position: absolute; z-index: 40;
+    width: 60px; height: 60px;
+    background: rgba(0, 0, 0, 0.5); 
+    border: 2px solid rgba(255,255,255,0.4);
+    color: white; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; text-decoration: none; 
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.nav-arrow:hover {
+    background: #0d6efd;
+    border-color: #fff;
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(13, 110, 253, 0.6);
+}
+
+/* Styl aktywnego przycisku (klawiatura) */
+.nav-arrow.active-key {
+    background: #fff !important;
+    color: #000 !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 0 25px white;
+    border-color: white;
+}
+
+/* Pozycjonowanie strzałek */
+.pos-top { top: 20px; left: 50%; transform: translateX(-50%); }
+.pos-bottom { bottom: 20px; left: 50%; transform: translateX(-50%); }
+.pos-left { top: 50%; left: 20px; transform: translateY(-50%); }
+.pos-right { top: 50%; right: 20px; transform: translateY(-50%); }
+
+/* =========================================
+   6. PANEL ADMINA (Poprawa wyglądu tabel)
+   ========================================= */
+
+/* Karty w panelu admina */
+.card {
+    border: 1px solid rgba(255,255,255,0.1);
+    background-color: #1e1e24; /* Ciemnoszary, nie czarny */
+}
+
+/* Tabela w ciemnym motywie */
+.table-dark {
+    --bs-table-bg: #1e1e24;
+    --bs-table-striped-bg: #25252b;
+    --bs-table-hover-bg: #2a2a30;
+    border-color: #373737;
+}
+
+.table-dark th {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #aaa;
+    border-bottom: 2px solid #444;
+}
+
+.table-dark td {
+    border-bottom: 1px solid #333;
+    color: #e0e0e0;
+}
+
+/* Obrazki w tabeli */
+.table img {
+    transition: transform 0.2s;
+}
+.table img:hover {
+    transform: scale(1.5);
+    z-index: 10;
+    position: relative;
+    border: 1px solid white;
+}

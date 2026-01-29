@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wirtualny Spacer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body> <header>
+        <nav class="navbar navbar-expand-sm navbar-dark navbar-glass mb-3">
+            <div class="container">
+                
+                <a class="navbar-brand fw-bold text-uppercase tracking-wider text-white" asp-controller="Walk" asp-action="Index" asp-route-id="1" style="text-shadow: 0 0 10px rgba(255,255,255,0.5);">
+                    🏛️ Wirtualna Uczelnia
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        @if (User.Identity != null && User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item d-flex align-items-center">
+                                <span class="text-white fw-bold me-3 small" style="opacity:0.8">Witaj, Admin!</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-sm btn-outline-light me-2" asp-controller="Admin" asp-action="Index">🛠️ Panel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-sm btn-danger" asp-controller="Admin" asp-action="Logout">Wyloguj</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50" asp-controller="Admin" asp-action="Login" title="Logowanie Administratora">🔐</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container flex-grow-1">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer-transparent mt-auto py-3 text-center">
+        <div class="container">
+            &copy; 2026 - Wirtualny Spacer Uczelni
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
