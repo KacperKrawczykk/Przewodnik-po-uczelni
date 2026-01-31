@@ -7,28 +7,19 @@
 
 <div class="container-fluid px-3">
     <div class="tour-viewport">
-        
         <img src="@Model.ImageUrl" class="tour-bg-image" alt="@Model.Name"
              onerror="this.src='https://placehold.co/1920x1080/222/FFF?text=Brak+Zdjecia';">
 
-        <div class="ui-btn btn-info-pos" onclick="toggleInfo()" title="Informacje [I]">
-            ℹ️
-        </div>
-
+        <div class="ui-btn btn-info-pos" onclick="toggleInfo()" title="Informacje [I]">ℹ️</div>
         <div id="infoBox" class="glass-popup popup-info">
             <button class="close-btn" onclick="toggleInfo()">✕</button>
             <h4 class="fw-bold mb-2 text-warning">@Model.Name</h4>
             @if (!string.IsNullOrEmpty(Model.Description)) { 
                 <p class="small text-light mb-0" style="line-height: 1.6;">@Model.Description</p> 
-            } else { 
-                <p class="small text-muted mb-0">Brak opisu.</p> 
-            }
+            } else { <p class="small text-muted mb-0">Brak opisu.</p> }
         </div>
 
-        <div class="ui-btn btn-teleport-pos" onclick="toggleTeleport()" title="Asystent [Enter]">
-            🤖
-        </div>
-
+        <div class="ui-btn btn-teleport-pos" onclick="toggleTeleport()" title="Asystent [Enter]">🤖</div>
         <div id="teleportBox" class="glass-popup popup-teleport">
             <button class="close-btn" onclick="toggleTeleport()">✕</button>
             <div class="text-center mb-3">
@@ -36,10 +27,8 @@
                 <p class="text-muted small">Wybierz cel podróży:</p>
             </div>
             <div class="teleport-list">
-                @if (allDestinations != null)
-                {
-                    foreach (var place in allDestinations)
-                    {
+                @if (allDestinations != null) {
+                    foreach (var place in allDestinations) {
                         string activeStyle = (place.Id == Model.Id) ? "border-color: #0d6efd; background: rgba(13,110,253,0.1);" : "";
                         <a href="/Walk/Index/@place.Id" class="teleport-item" style="@activeStyle">📍 @place.Name</a>
                     }
@@ -47,26 +36,18 @@
             </div>
         </div>
 
-        @if (Model.OutboundConnections.Any())
-        {
-            foreach (var conn in Model.OutboundConnections)
-            {
+        @if (Model.OutboundConnections.Any()) {
+            foreach (var conn in Model.OutboundConnections) {
                 string posClass = "pos-bottom";
                 string icon = "⬇️"; 
-
-                // Przypisanie klasy CSS do kierunku (ważne dla skryptu JS)
                 if (conn.Direction == "FORWARD") { posClass = "pos-top"; icon = "⬆️"; }
                 if (conn.Direction == "BACK")    { posClass = "pos-bottom"; icon = "⬇️"; }
                 if (conn.Direction == "LEFT")    { posClass = "pos-left"; icon = "⬅️"; }
                 if (conn.Direction == "RIGHT")   { posClass = "pos-right"; icon = "➡️"; }
 
-                <a href="/Walk/Index/@conn.TargetId" class="nav-arrow @posClass">
-                   @icon
-                </a>
+                <a href="/Walk/Index/@conn.TargetId" class="nav-arrow @posClass">@icon</a>
             }
-        }
-        else
-        {
+        } else {
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                  <a href="/Walk/Index/1" class="btn btn-danger btn-lg rounded-pill">⛔ Koniec trasy</a>
             </div>
@@ -75,56 +56,37 @@
 </div>
 
 <script>
-    // --- FUNKCJE UI (Otwieranie okienek) ---
     function toggleInfo() {
         var info = document.getElementById("infoBox");
         var teleport = document.getElementById("teleportBox");
-        teleport.style.display = "none"; // Zamknij drugie okno
+        teleport.style.display = "none";
         info.style.display = (info.style.display === "block") ? "none" : "block";
     }
-
     function toggleTeleport() {
         var info = document.getElementById("infoBox");
         var teleport = document.getElementById("teleportBox");
-        info.style.display = "none"; // Zamknij drugie okno
+        info.style.display = "none";
         teleport.style.display = (teleport.style.display === "flex") ? "none" : "flex";
     }
-
-    // --- OBSŁUGA KLAWIATURY ---
     document.addEventListener('keydown', function(event) {
-        
-        // Jeśli asystent jest otwarty, blokujemy strzałki (żeby nie klikać w tle), chyba że Esc
         var teleportOpen = document.getElementById("teleportBox").style.display === "flex";
         if (teleportOpen && event.key !== "Escape") return;
-
         let selector = "";
-
-        // Mapowanie klawiszy
         switch (event.key) {
             case "ArrowUp":    selector = ".pos-top"; break;
             case "ArrowDown":  selector = ".pos-bottom"; break;
             case "ArrowLeft":  selector = ".pos-left"; break;
             case "ArrowRight": selector = ".pos-right"; break;
-            case "i":          toggleInfo(); return;
-            case "I":          toggleInfo(); return;
-            case "Enter":      toggleTeleport(); return;
-            case "Escape":     
-                document.getElementById("infoBox").style.display = "none";
-                document.getElementById("teleportBox").style.display = "none";
-                return;
+            case "i": case "I": toggleInfo(); return;
+            case "Enter":       toggleTeleport(); return;
+            case "Escape":      document.getElementById("infoBox").style.display = "none";
+                                document.getElementById("teleportBox").style.display = "none"; return;
         }
-
-        // Jeśli wciśnięto strzałkę i taki przycisk istnieje na ekranie
         if (selector !== "") {
             const btn = document.querySelector(selector);
             if (btn) {
-                // 1. Podświetl przycisk (efekt wciśnięcia)
                 btn.classList.add("active-key");
-                
-                // 2. Kliknij go z małym opóźnieniem (żeby oko zauważyło błysk)
-                setTimeout(() => {
-                    btn.click(); 
-                }, 100);
+                setTimeout(() => { btn.click(); }, 100);
             }
         }
     });

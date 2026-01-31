@@ -1,0 +1,865 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\nowyprzewodnik.bundle.scp.css",
+      "PackagePath": "staticwebassets\\nowyprzewodnik.ja6azw53ju.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\10 korytarz lewo 2.png",
+      "PackagePath": "staticwebassets\\media\\10 korytarz lewo 2.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\11 sala komputerowa.png",
+      "PackagePath": "staticwebassets\\media\\11 sala komputerowa.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\12 w prawo od korytarz lewo 2.png",
+      "PackagePath": "staticwebassets\\media\\12 w prawo od korytarz lewo 2.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\13 korytarz i winda dla niepelnosprytnych.png",
+      "PackagePath": "staticwebassets\\media\\13 korytarz i winda dla niepelnosprytnych.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\14 wneka, strefa relaksu.png",
+      "PackagePath": "staticwebassets\\media\\14 wneka, strefa relaksu.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\15 korytarz lewo 3.png",
+      "PackagePath": "staticwebassets\\media\\15 korytarz lewo 3.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\16 studium ksztalcenia na odleglosc pokoj 16.png",
+      "PackagePath": "staticwebassets\\media\\16 studium ksztalcenia na odleglosc pokoj 16.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\17 korytarz lewo 4.png",
+      "PackagePath": "staticwebassets\\media\\17 korytarz lewo 4.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\19 korytarz lewo 5.png",
+      "PackagePath": "staticwebassets\\media\\19 korytarz lewo 5.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\1wejscie.png",
+      "PackagePath": "staticwebassets\\media\\1wejscie.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\20 sala wykladowa a8.png",
+      "PackagePath": "staticwebassets\\media\\20 sala wykladowa a8.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\21 kible w prawo od korytarz lewo 5.png",
+      "PackagePath": "staticwebassets\\media\\21 kible w prawo od korytarz lewo 5.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\22 korytarz lewo 6.png",
+      "PackagePath": "staticwebassets\\media\\22 korytarz lewo 6.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\23 sala wykladowa a9.png",
+      "PackagePath": "staticwebassets\\media\\23 sala wykladowa a9.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\24 wyjście ewakuacyjne i schodzy.png",
+      "PackagePath": "staticwebassets\\media\\24 wyjście ewakuacyjne i schodzy.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\25 Klatka schodowa lewo 1.png",
+      "PackagePath": "staticwebassets\\media\\25 Klatka schodowa lewo 1.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\26  Klatka schodowa lewo 2.png",
+      "PackagePath": "staticwebassets\\media\\26  Klatka schodowa lewo 2.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\27  Klatka schodowa lewo 3.png",
+      "PackagePath": "staticwebassets\\media\\27  Klatka schodowa lewo 3.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\28  Klatka schodowa lewo 4.png",
+      "PackagePath": "staticwebassets\\media\\28  Klatka schodowa lewo 4.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\29. klatka schodzowa góra 1.png",
+      "PackagePath": "staticwebassets\\media\\29. klatka schodzowa góra 1.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\2szatniaportiernia.png",
+      "PackagePath": "staticwebassets\\media\\2szatniaportiernia.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\3 korytarz przed sekretariatem.png",
+      "PackagePath": "staticwebassets\\media\\3 korytarz przed sekretariatem.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\30. klatka schodzowa góra 2.png",
+      "PackagePath": "staticwebassets\\media\\30. klatka schodzowa góra 2.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\31. klatka schodzowa góra 3.png",
+      "PackagePath": "staticwebassets\\media\\31. klatka schodzowa góra 3.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\32 korytarz góra 1.png",
+      "PackagePath": "staticwebassets\\media\\32 korytarz góra 1.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\33 sala a26.png",
+      "PackagePath": "staticwebassets\\media\\33 sala a26.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\34 korytarz góra  2.png",
+      "PackagePath": "staticwebassets\\media\\34 korytarz góra  2.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\35 korytarz góra 3.png",
+      "PackagePath": "staticwebassets\\media\\35 korytarz góra 3.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\36 sekretariat kolegium studiow administracji i informatyki.png",
+      "PackagePath": "staticwebassets\\media\\36 sekretariat kolegium studiow administracji i informatyki.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\37 korytarz góra 4.png",
+      "PackagePath": "staticwebassets\\media\\37 korytarz góra 4.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\38 laboratorium a27.png",
+      "PackagePath": "staticwebassets\\media\\38 laboratorium a27.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\39 dziekan kolegium studiow administracji i informatyki.png",
+      "PackagePath": "staticwebassets\\media\\39 dziekan kolegium studiow administracji i informatyki.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\4 sekratariat ale w srodku.png",
+      "PackagePath": "staticwebassets\\media\\4 sekratariat ale w srodku.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\40 korytarz góra 5.png",
+      "PackagePath": "staticwebassets\\media\\40 korytarz góra 5.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\41 sekretariat kolegium studiow zarzadzania i bezpieczenstwa.png",
+      "PackagePath": "staticwebassets\\media\\41 sekretariat kolegium studiow zarzadzania i bezpieczenstwa.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\42 korytarz góra 6.png",
+      "PackagePath": "staticwebassets\\media\\42 korytarz góra 6.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\43 dziekan kolegium studiow zarzadzania i bezpieczenstwa.png",
+      "PackagePath": "staticwebassets\\media\\43 dziekan kolegium studiow zarzadzania i bezpieczenstwa.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\44 korytarz góra 7.png",
+      "PackagePath": "staticwebassets\\media\\44 korytarz góra 7.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\45 pokoj wykladowcow 29.png",
+      "PackagePath": "staticwebassets\\media\\45 pokoj wykladowcow 29.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\46 korytarz góra 8.png",
+      "PackagePath": "staticwebassets\\media\\46 korytarz góra 8.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\47 sala komputerowa a30.png",
+      "PackagePath": "staticwebassets\\media\\47 sala komputerowa a30.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\48 wneka strefa relaksu góra.png",
+      "PackagePath": "staticwebassets\\media\\48 wneka strefa relaksu góra.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\49 korytarz góra 9.png",
+      "PackagePath": "staticwebassets\\media\\49 korytarz góra 9.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\5 korytarz.png",
+      "PackagePath": "staticwebassets\\media\\5 korytarz.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\50 winda dla niepelnosprytnych góra.png",
+      "PackagePath": "staticwebassets\\media\\50 winda dla niepelnosprytnych góra.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\51 dziekan kolegium studiow pedagogicznych i wychowania fizycznego.png",
+      "PackagePath": "staticwebassets\\media\\51 dziekan kolegium studiow pedagogicznych i wychowania fizycznego.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\52 sala wykladowa a31.png",
+      "PackagePath": "staticwebassets\\media\\52 sala wykladowa a31.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\53 sekretariat kolegium studiow pedagogicznych i wychowania fizycznego.png",
+      "PackagePath": "staticwebassets\\media\\53 sekretariat kolegium studiow pedagogicznych i wychowania fizycznego.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\54 korytarz góra 10.png",
+      "PackagePath": "staticwebassets\\media\\54 korytarz góra 10.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\55 sala komputerowa a32.png",
+      "PackagePath": "staticwebassets\\media\\55 sala komputerowa a32.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\56 kible góra.png",
+      "PackagePath": "staticwebassets\\media\\56 kible góra.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\57 sala komputerowa a33.png",
+      "PackagePath": "staticwebassets\\media\\57 sala komputerowa a33.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\58 korytarz.png",
+      "PackagePath": "staticwebassets\\media\\58 korytarz.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\59 laboratorium a34.png",
+      "PackagePath": "staticwebassets\\media\\59 laboratorium a34.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\6 instytut ksztalcenia podyplomowego pokoj nr 22.png",
+      "PackagePath": "staticwebassets\\media\\6 instytut ksztalcenia podyplomowego pokoj nr 22.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\7 korytarz lewo 1.png",
+      "PackagePath": "staticwebassets\\media\\7 korytarz lewo 1.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\8 koordynator do spraw dostepnosci, pokoj nr 20.png",
+      "PackagePath": "staticwebassets\\media\\8 koordynator do spraw dostepnosci, pokoj nr 20.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\9 w lewo od korytarz 1.png",
+      "PackagePath": "staticwebassets\\media\\9 w lewo od korytarz 1.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\Bez tytułu — kopia263110140.png",
+      "PackagePath": "staticwebassets\\media\\Bez tytułu — kopia263110140.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\Bez tytułu_265746676.png",
+      "PackagePath": "staticwebassets\\media\\Bez tytułu_265746676.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_00ca1b06.png",
+      "PackagePath": "staticwebassets\\media\\img_00ca1b06.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_019a7fa7.png",
+      "PackagePath": "staticwebassets\\media\\img_019a7fa7.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_01fd5216.png",
+      "PackagePath": "staticwebassets\\media\\img_01fd5216.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_036bcfc8.png",
+      "PackagePath": "staticwebassets\\media\\img_036bcfc8.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_039dfc8a.png",
+      "PackagePath": "staticwebassets\\media\\img_039dfc8a.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_09dbf1e1.png",
+      "PackagePath": "staticwebassets\\media\\img_09dbf1e1.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_0ea02410.png",
+      "PackagePath": "staticwebassets\\media\\img_0ea02410.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_10165ddc.png",
+      "PackagePath": "staticwebassets\\media\\img_10165ddc.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_12b11628.png",
+      "PackagePath": "staticwebassets\\media\\img_12b11628.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_1398aabe.png",
+      "PackagePath": "staticwebassets\\media\\img_1398aabe.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_13ea233c.png",
+      "PackagePath": "staticwebassets\\media\\img_13ea233c.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_15f52833.png",
+      "PackagePath": "staticwebassets\\media\\img_15f52833.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_17c4531b.png",
+      "PackagePath": "staticwebassets\\media\\img_17c4531b.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_185f72b9.png",
+      "PackagePath": "staticwebassets\\media\\img_185f72b9.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_1cabfd1d.png",
+      "PackagePath": "staticwebassets\\media\\img_1cabfd1d.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_1d21d1a7.png",
+      "PackagePath": "staticwebassets\\media\\img_1d21d1a7.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_1e9bf0eb.png",
+      "PackagePath": "staticwebassets\\media\\img_1e9bf0eb.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_1ea051c1.png",
+      "PackagePath": "staticwebassets\\media\\img_1ea051c1.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_25e17855.png",
+      "PackagePath": "staticwebassets\\media\\img_25e17855.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_2b7b4c61.png",
+      "PackagePath": "staticwebassets\\media\\img_2b7b4c61.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_32ab6b95.png",
+      "PackagePath": "staticwebassets\\media\\img_32ab6b95.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_3b7346ca.png",
+      "PackagePath": "staticwebassets\\media\\img_3b7346ca.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_3b9527cb.png",
+      "PackagePath": "staticwebassets\\media\\img_3b9527cb.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_3d416ca1.png",
+      "PackagePath": "staticwebassets\\media\\img_3d416ca1.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_3dc986bd.png",
+      "PackagePath": "staticwebassets\\media\\img_3dc986bd.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_40db3419.png",
+      "PackagePath": "staticwebassets\\media\\img_40db3419.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_42394f77.png",
+      "PackagePath": "staticwebassets\\media\\img_42394f77.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_45368868.png",
+      "PackagePath": "staticwebassets\\media\\img_45368868.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_462c40d0.png",
+      "PackagePath": "staticwebassets\\media\\img_462c40d0.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_49f03ea1.png",
+      "PackagePath": "staticwebassets\\media\\img_49f03ea1.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_49f8c910.png",
+      "PackagePath": "staticwebassets\\media\\img_49f8c910.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_4bef29f2.png",
+      "PackagePath": "staticwebassets\\media\\img_4bef29f2.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_5074daca.png",
+      "PackagePath": "staticwebassets\\media\\img_5074daca.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_5467243a.png",
+      "PackagePath": "staticwebassets\\media\\img_5467243a.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_59086308.png",
+      "PackagePath": "staticwebassets\\media\\img_59086308.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_59a1ae60.png",
+      "PackagePath": "staticwebassets\\media\\img_59a1ae60.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_5f79974a.png",
+      "PackagePath": "staticwebassets\\media\\img_5f79974a.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_604560bb.png",
+      "PackagePath": "staticwebassets\\media\\img_604560bb.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_65827b22.png",
+      "PackagePath": "staticwebassets\\media\\img_65827b22.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_6ac4e439.png",
+      "PackagePath": "staticwebassets\\media\\img_6ac4e439.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_6b50e741.png",
+      "PackagePath": "staticwebassets\\media\\img_6b50e741.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_6fe0ef49.png",
+      "PackagePath": "staticwebassets\\media\\img_6fe0ef49.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_75943b74.png",
+      "PackagePath": "staticwebassets\\media\\img_75943b74.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_7fc435c2.png",
+      "PackagePath": "staticwebassets\\media\\img_7fc435c2.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_80cfad41.png",
+      "PackagePath": "staticwebassets\\media\\img_80cfad41.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_823151cf.png",
+      "PackagePath": "staticwebassets\\media\\img_823151cf.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_8ae61cdc.png",
+      "PackagePath": "staticwebassets\\media\\img_8ae61cdc.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_8e06f3a0.png",
+      "PackagePath": "staticwebassets\\media\\img_8e06f3a0.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_90f90473.png",
+      "PackagePath": "staticwebassets\\media\\img_90f90473.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_90fe1d75.png",
+      "PackagePath": "staticwebassets\\media\\img_90fe1d75.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_97a3f79f.png",
+      "PackagePath": "staticwebassets\\media\\img_97a3f79f.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_97c9ed27.png",
+      "PackagePath": "staticwebassets\\media\\img_97c9ed27.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_9987fdfe.png",
+      "PackagePath": "staticwebassets\\media\\img_9987fdfe.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_9d6f1e71.png",
+      "PackagePath": "staticwebassets\\media\\img_9d6f1e71.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_a067e3aa.png",
+      "PackagePath": "staticwebassets\\media\\img_a067e3aa.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_a71d7cf6.png",
+      "PackagePath": "staticwebassets\\media\\img_a71d7cf6.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_a85a3748.png",
+      "PackagePath": "staticwebassets\\media\\img_a85a3748.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_abe262d3.png",
+      "PackagePath": "staticwebassets\\media\\img_abe262d3.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_b080718b.png",
+      "PackagePath": "staticwebassets\\media\\img_b080718b.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_b4b94c9e.png",
+      "PackagePath": "staticwebassets\\media\\img_b4b94c9e.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_b64df76f.png",
+      "PackagePath": "staticwebassets\\media\\img_b64df76f.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_baebb3a9.png",
+      "PackagePath": "staticwebassets\\media\\img_baebb3a9.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_bb711e3f.png",
+      "PackagePath": "staticwebassets\\media\\img_bb711e3f.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_bbfecc8f.png",
+      "PackagePath": "staticwebassets\\media\\img_bbfecc8f.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_d64ab5b0.png",
+      "PackagePath": "staticwebassets\\media\\img_d64ab5b0.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_d80cd2c9.png",
+      "PackagePath": "staticwebassets\\media\\img_d80cd2c9.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_d91d1557.png",
+      "PackagePath": "staticwebassets\\media\\img_d91d1557.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_daf7057a.png",
+      "PackagePath": "staticwebassets\\media\\img_daf7057a.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_dd2b4b50.png",
+      "PackagePath": "staticwebassets\\media\\img_dd2b4b50.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_de533854.png",
+      "PackagePath": "staticwebassets\\media\\img_de533854.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_e02b43dd.png",
+      "PackagePath": "staticwebassets\\media\\img_e02b43dd.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_e2d2b441.png",
+      "PackagePath": "staticwebassets\\media\\img_e2d2b441.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_e59fd162.png",
+      "PackagePath": "staticwebassets\\media\\img_e59fd162.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_e6857f89.png",
+      "PackagePath": "staticwebassets\\media\\img_e6857f89.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_e7b86410.png",
+      "PackagePath": "staticwebassets\\media\\img_e7b86410.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_e82b997c.png",
+      "PackagePath": "staticwebassets\\media\\img_e82b997c.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_ede21840.png",
+      "PackagePath": "staticwebassets\\media\\img_ede21840.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_f32cfc13.png",
+      "PackagePath": "staticwebassets\\media\\img_f32cfc13.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_f4897f53.png",
+      "PackagePath": "staticwebassets\\media\\img_f4897f53.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_f53504da.png",
+      "PackagePath": "staticwebassets\\media\\img_f53504da.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_f65e1ceb.png",
+      "PackagePath": "staticwebassets\\media\\img_f65e1ceb.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_f7e03b35.png",
+      "PackagePath": "staticwebassets\\media\\img_f7e03b35.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_f987822e.png",
+      "PackagePath": "staticwebassets\\media\\img_f987822e.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_fdfd0354.png",
+      "PackagePath": "staticwebassets\\media\\img_fdfd0354.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_fe3d442f.png",
+      "PackagePath": "staticwebassets\\media\\img_fe3d442f.png"
+    },
+    {
+      "Id": "C:\\Users\\kaxpe\\OneDrive\\Pulpit\\1234\\nowyprzewodnik\\wwwroot\\media\\img_fff43ab0.png",
+      "PackagePath": "staticwebassets\\media\\img_fff43ab0.png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.nowyprzewodnik.props",
+      "PackagePath": "build\\nowyprzewodnik.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.nowyprzewodnik.props",
+      "PackagePath": "buildMultiTargeting\\nowyprzewodnik.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.nowyprzewodnik.props",
+      "PackagePath": "buildTransitive\\nowyprzewodnik.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.nowyprzewodnik.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.nowyprzewodnik.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

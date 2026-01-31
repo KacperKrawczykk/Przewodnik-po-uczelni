@@ -1,15 +1,16 @@
-using System.Security.Claims;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NowyPrzewodnikMVC.Data;
 using NowyPrzewodnikMVC.Models;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace NowyPrzewodnikMVC.Controllers
 {
-    [Authorize]
     public class AdminController : Controller
     {
         private readonly AppDbContext _context;
@@ -21,47 +22,87 @@ namespace NowyPrzewodnikMVC.Controllers
             _hostEnvironment = hostEnvironment;
         }
 
-        // --- DASHBOARD ---
+        // 1. LISTA MIEJSC
         public async Task<IActionResult> Index()
         {
-            var waypoints = await _context.Waypoints.OrderBy(w => w.Id).ToListAsync();
-            return View(waypoints);
+            return View(await _context.Waypoints.ToListAsync());
         }
 
-        // --- CREATE (GET) ---
-        public IActionResult Create()
+        // 2. EDYCJA POŁĄCZEŃ
+        public async Task<IActionResult> Connections(int id)
         {
-            return View();
+            var waypoint = await _context.Waypoints
+                .Include(w => w.OutboundConnections)
+                    .ThenInclude(c => c.Target) 
+                .FirstOrDefaultAsync(w => w.Id == id);
+
+            if (waypoint == null) return NotFound();
+
+            ViewBag.AllWaypoints = await _context.Waypoints.OrderBy(w => w.Name).ToListAsync();
+            return View(waypoint);
         }
 
-        // --- CREATE (POST) ---
         [HttpPost]
         [ValidateAntiForgeryToken]
-        // Dodano Description do Bind
-        public async Task<IActionResult> Create([Bind("Name,Description")] Waypoint waypoint, IFormFile? imageFile)
+        public async Task<IActionResult> AddConnection(int sourceId, int targetId, string direction)
         {
-            // Obsługa pliku
-            if (imageFile != null && imageFile.Length > 0)
-            {
-                string wwwRootPath = _hostEnvironment.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(imageFile.FileName);
-                string extension = Path.GetExtension(imageFile.FileName);
-                fileName = fileName + "_" + DateTime.Now.ToString("yymmssfff") + extension;
-                string path = Path.Combine(wwwRootPath + "/media/", fileName);
-
-                using (var fileStream = new FileStream(path, FileMode.Create))
-                {
-                    await imageFile.CopyToAsync(fileStream);
-                }
-                waypoint.ImageUrl = "/media/" + fileName;
+            var exists = await _context.Connections.AnyAsync(c => c.SourceId == sourceId && c.TargetId == targetId);
+            if (!exists) {
+                _context.Connections.Add(new Connection { SourceId = sourceId, TargetId = targetId, Direction = direction });
+                await _context.SaveChangesAsync();
             }
-            else
-            {
-                waypoint.ImageUrl = "https://placehold.co/600x400?text=Brak+Zdjecia";
-            }
+            return RedirectToAction("Connections", new { id = sourceId });
+        }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConnection(int connectionId)
+        {
+            var conn = await _context.Connections.FindAsync(connectionId);
+            if (conn != null) {
+                int src = conn.SourceId;
+                _context.Connections.Remove(conn);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Connections", new { id = src });
+            }
+            return RedirectToAction("Index");
+        }
+
+        // 3. CREATE (Z UPLOADEM DO /media)
+        public IActionResult Create() => View();
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Waypoint waypoint, IFormFile? imageFile)
+        {
             if (ModelState.IsValid)
             {
+                if (imageFile != null)
+                {
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(imageFile.FileName);
+                    string extension = Path.GetExtension(imageFile.FileName);
+                    
+                    // Unikalna nazwa
+                    fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    
+                    // ZAPIS DO FOLDERU MEDIA
+                    string path = Path.Combine(wwwRootPath, "media", fileName);
+
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(fileStream);
+                    }
+
+                    // ZAPIS ŚCIEŻKI W BAZIE
+                    waypoint.ImageUrl = "/media/" + fileName;
+                }
+                else
+                {
+                    // Domyślny obrazek, jeśli brak pliku
+                    waypoint.ImageUrl = "https://placehold.co/600x400?text=Brak+Zdjecia";
+                }
+
                 _context.Add(waypoint);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -69,7 +110,7 @@ namespace NowyPrzewodnikMVC.Controllers
             return View(waypoint);
         }
 
-        // --- EDIT (GET) ---
+        // 4. EDIT (Z UPLOADEM DO /media)
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
@@ -78,110 +119,83 @@ namespace NowyPrzewodnikMVC.Controllers
             return View(waypoint);
         }
 
-        // --- EDIT (POST) ---
         [HttpPost]
         [ValidateAntiForgeryToken]
-        // Dodano Description do Bind
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,ImageUrl")] Waypoint waypoint, IFormFile? imageFile)
+        public async Task<IActionResult> Edit(int id, Waypoint waypoint, IFormFile? imageFile)
         {
             if (id != waypoint.Id) return NotFound();
 
             if (ModelState.IsValid)
             {
-                // Jeśli wgrano nowe zdjęcie
-                if (imageFile != null && imageFile.Length > 0)
+                try
                 {
-                    string wwwRootPath = _hostEnvironment.WebRootPath;
-                    string fileName = Path.GetFileNameWithoutExtension(imageFile.FileName);
-                    string extension = Path.GetExtension(imageFile.FileName);
-                    fileName = fileName + "_" + DateTime.Now.ToString("yymmssfff") + extension;
-                    string path = Path.Combine(wwwRootPath + "/media/", fileName);
-
-                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    if (imageFile != null)
                     {
-                        await imageFile.CopyToAsync(fileStream);
-                    }
-                    waypoint.ImageUrl = "/media/" + fileName;
-                }
+                        string wwwRootPath = _hostEnvironment.WebRootPath;
+                        string fileName = Path.GetFileNameWithoutExtension(imageFile.FileName);
+                        string extension = Path.GetExtension(imageFile.FileName);
+                        
+                        fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                        
+                        // ZAPIS DO FOLDERU MEDIA
+                        string path = Path.Combine(wwwRootPath, "media", fileName);
 
-                _context.Update(waypoint);
-                await _context.SaveChangesAsync();
+                        using (var fileStream = new FileStream(path, FileMode.Create))
+                        {
+                            await imageFile.CopyToAsync(fileStream);
+                        }
+
+                        // AKTUALIZACJA ŚCIEŻKI W BAZIE
+                        waypoint.ImageUrl = "/media/" + fileName;
+                    }
+                    else
+                    {
+                        // Jeśli nie wybrano pliku, zachowaj stare zdjęcie
+                        _context.Entry(waypoint).Property(x => x.ImageUrl).IsModified = false;
+                    }
+
+                    _context.Update(waypoint);
+                    
+                    if (imageFile == null) 
+                    {
+                        _context.Entry(waypoint).Property(x => x.ImageUrl).IsModified = false;
+                    }
+                    
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!_context.Waypoints.Any(e => e.Id == waypoint.Id)) return NotFound();
+                    else throw;
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(waypoint);
         }
 
-        // --- DELETE ---
-        [HttpPost]
-        public async Task<IActionResult> Delete(int id)
+        // 5. DELETE (BEZPIECZNE USUWANIE)
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var waypoint = await _context.Waypoints.FindAsync(id);
             if (waypoint != null)
             {
-                var connections = _context.Connections.Where(c => c.SourceId == id || c.TargetId == id);
-                _context.Connections.RemoveRange(connections);
+                // Najpierw usuń połączenia
+                var outC = _context.Connections.Where(c => c.SourceId == id); 
+                _context.Connections.RemoveRange(outC);
+                
+                var inC = _context.Connections.Where(c => c.TargetId == id); 
+                _context.Connections.RemoveRange(inC);
+                
+                // Potem usuń miejsce
                 _context.Waypoints.Remove(waypoint);
                 await _context.SaveChangesAsync();
             }
             return RedirectToAction(nameof(Index));
         }
 
-        // --- CONNECTIONS ---
-        public async Task<IActionResult> Connections(int id)
-        {
-            var sourcePlace = await _context.Waypoints
-                .Include(w => w.OutboundConnections).ThenInclude(c => c.Target)
-                .FirstOrDefaultAsync(w => w.Id == id);
-            if (sourcePlace == null) return NotFound();
-            ViewBag.AllWaypoints = await _context.Waypoints.OrderBy(w => w.Name).ToListAsync();
-            return View(sourcePlace);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> AddConnection(int sourceId, int targetId, string direction)
-        {
-            if (sourceId == targetId) return RedirectToAction("Connections", new { id = sourceId });
-            _context.Connections.Add(new Connection { SourceId = sourceId, TargetId = targetId, Direction = direction });
-            await _context.SaveChangesAsync();
-            return RedirectToAction("Connections", new { id = sourceId });
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteConnection(int connectionId)
-        {
-            var conn = await _context.Connections.FindAsync(connectionId);
-            if (conn != null) {
-                int sourceId = conn.SourceId;
-                _context.Connections.Remove(conn);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Connections", new { id = sourceId });
-            }
-            return RedirectToAction(nameof(Index));
-        }
-
-        // --- LOGOWANIE ---
-        [AllowAnonymous]
         public IActionResult Login() => View();
-
-        [HttpPost]
-        [AllowAnonymous]
-        public async Task<IActionResult> Login(string username, string password)
-        {
-            if (username == "admin" && password == "123")
-            {
-                var claims = new List<Claim> { new Claim(ClaimTypes.Name, username), new Claim(ClaimTypes.Role, "Admin") };
-                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
-                return RedirectToAction("Index");
-            }
-            ViewBag.Error = "Błędny login lub hasło";
-            return View();
-        }
-
-        public async Task<IActionResult> Logout()
-        {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Login");
-        }
+        public IActionResult Logout() => RedirectToAction("Index", "Walk");
     }
 }

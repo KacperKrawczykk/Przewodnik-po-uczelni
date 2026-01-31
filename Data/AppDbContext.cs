@@ -9,18 +9,25 @@ namespace NowyPrzewodnikMVC.Data
         {
         }
 
-        // Tabele w bazie danych
         public DbSet<Waypoint> Waypoints { get; set; }
         public DbSet<Connection> Connections { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Konfiguracja relacji - żeby baza wiedziała jak łączyć strzałki z miejscami
+            base.OnModelCreating(modelBuilder);
+
+            // Konfiguracja relacji
             modelBuilder.Entity<Connection>()
                 .HasOne(c => c.Source)
                 .WithMany(w => w.OutboundConnections)
                 .HasForeignKey(c => c.SourceId)
-                .OnDelete(DeleteBehavior.Restrict); // Zabezpieczenie przed kaskadowym usuwaniem
+                .OnDelete(DeleteBehavior.Restrict); // Ważne dla bezpieczeństwa
+
+            modelBuilder.Entity<Connection>()
+                .HasOne(c => c.Target)
+                .WithMany()
+                .HasForeignKey(c => c.TargetId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
